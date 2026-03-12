@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create object for student 
+
+        let student ={
+            id: 101,
+            name: "prarak",
+            age: 18,
+            isMarried: false,
+            address:{
+                streetNo:2,
+                area: "kailsa",
+                pincode: 244221,
+                city:"amroha"
+            } ,
+            education:["B.tech","cse",18,2025],
+            getinfo:function(){
+                return "my detail are" + student.id + student.name;
+            } ,
+            examDone:null
+
+
+        };
+        console.log(student.address);
+        console.log(student.education);
+
+        //find.object key in object
+        console.log('id' in student);
+        // delete object keys from object
+        console.log(delete student.name);
+        console.log(student);
+        //object length
+        let StudentKeys=Object.keys(student);
+        console.log(StudentKeys.length);
+        //iterate keys of object
+
+        // using for
+        for(let i=0; i<StudentKeys.length; i++){
+            console.log(student[StudentKeys[i]]);
+        } 
+        //for in loop
+        for(let x in student){
+            console.log(student[x]);
+
+            //create object using keyword
+
+            let myInfo=new Object();
+            myInfo.name="prarak";
+            myInfo.age=18;
+            myI
+
+        }
+
+    </script>
+</body>
+</html>
